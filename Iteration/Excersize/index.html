@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iterations</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Can you guess my number?</h1>
+    <h1 id="title">Can you guess my number?</h1>
+    <h2 id="highscore">Highscore:</h2>
+    <br>
+    <br>
+    <br>
+    <br>
     <p>Guess a number between 1 and 10:</p>
     <input id="input">
-    <input id="submitBtn" type="button" onclick="myFunction()" value="Submit">
+    <!-- <input id="submitBtn" type="button" onclick="myFunction()" value="Submit"> -->
+    <input id="submitBtn" type="button" onclick="startHere()" value="Submit">
 
     <br>
     <p>Numbers Guessed:</p>
     <h3 id="numbersGuessed">0</h3>
+    <br>
+    <!-- <p>Turns:</p>
+    <p id="playerturns"></p> -->
 
     <br>
     <p id="response"></p>

@@ -16,45 +16,6 @@ var allGuesses = [];
 var playerScore = 0;
 var playerTurns = 20;
 
-function startHere() {
-    if (playerTurns >= 0) {
-        myFunction();
-    } else if (playerTurns < 0) {
-        newGame();
-        myFunction();
-
-    } else {
-        console.log("Something Went Wrong... Help Me!")
-    }
-}
-
-
-// playerTurns--;
-// document.getElementById(playerturns).innerHTML = "Turns lefts: " + playerTurns;
-
-var highscore = localStorage.getItem("highscore");
-
-if (highscore !== null) {
-    if (playerScore > highscore) {
-        localStorage.setItem("highscore", playerScore);
-    }
-} else {
-    localStorage.setItem("highscore", playerScore);
-}
-
-document.getElementById("highscore").innerHTML = "Highscore: " + highscore;
-
-function newGame() {
-    playerGuesses = []
-    playerScore = 0;
-    playerTurns = 20;
-
-}
-
-
-
-
-//#region myFuntion Start game
 function myFunction() {
     var playerGuesses;
     playerGuesses = document.getElementById("input").value;
@@ -85,5 +46,27 @@ function myFunction() {
     }
 
     document.getElementById("playerScore").innerHTML = playerScore;
+
 };
-//#endregion
+
+// playerTurns--;
+// document.getElementById(playerturns).innerHTML = "Turns lefts: " + playerTurns;
+
+var highscore = localStorage.getItem("highscore");
+
+if (highscore !== null) {
+    if (playerScore > highscore) {
+        localStorage.setItem("highscore", playerScore);
+    }
+} else {
+    localStorage.setItem("highscore", playerScore);
+}
+
+document.getElementById("highscore").innerHTML = "Highscore: " + highscore;
+
+function newGame() {
+    playerGuesses = []
+    playerScore = 0;
+    playerTurns = 20;
+
+}
