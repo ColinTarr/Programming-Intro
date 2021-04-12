@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*
+font-family: 'Press Start 2P', cursive;
+*/
+
+* {
+    background-color: black;
+    color: limegreen;
+}
+
+.title {
+    background-color: black;
+    border: 3px limegreen dotted;
+    border-bottom: 0px;
+    padding: 10px;
+    height: 150px;
+    margin-top: 20px;
+    margin-right: 500px;
+    margin-left: 500px;
+    outline-style: dotted;
+    outline-width: 3px;
+}
+
+#titleText {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.game {
+    background-color: black;
+    border: 3px limegreen dotted;
+    padding: 10px;
+    height: 700px;
+    margin-right: 220px;
+    margin-left: 220px;
+    outline-style: dotted;
+    outline-width: 3px;
+}
+
+#intro {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#nameInputDiv {
+    position: relative;
+    margin: 250px 2000px 0px 600px;
+}
+
+#name {
+    text-align: center;
+    position: relative;
+    display: block;
+    height: 40px;
+    float: left;
+    border: 1px limegreen dotted;
+    outline-style: none;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+#submitBtn {
+    height: 44.3px;
+    position: relative;
+    text-align: center;
+    float: center;
+    margin-left: 6px;
+    border-left: 1px limegreen dotted;
+    border-right: 1px limegreen dotted;
+    border-top: 1px limegreen dotted;
+    border-bottom: 1px limegreen dotted;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+#submitBtn:onclick {
+    outline-style: none;
+    outline-width: 1px;
+}
