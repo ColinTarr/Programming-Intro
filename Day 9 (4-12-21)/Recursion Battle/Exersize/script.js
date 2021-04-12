@@ -48,6 +48,7 @@
 // }
 //#endregion
 
+//#region Sum of all Numbers
 let n = 10000;
 // Sum of All Numbers Using a LOOP
 function sumTo(n) {
@@ -73,3 +74,5 @@ alert("This is Recursion " + sumTo(n));
 //Sum of ALL Numbers Using Recursion... Simplified further
 funcion sumTo(n) { return n * (n + 1) / 2 }
 alert("This is Simplified" + sumTo(n));
+
+// #endregion
