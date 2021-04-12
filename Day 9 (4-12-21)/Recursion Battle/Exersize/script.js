@@ -69,10 +69,10 @@ function sumTo(n) {
     if (n == 1) return 1;
     return n + sumTo(n - 1);
 }
-alert("This is Recursion " + sumTo(n));
+alert("This is Recursion: " + sumTo(n));
 
 //Sum of ALL Numbers Using Recursion... Simplified further
-funcion sumTo(n) { return n * (n + 1) / 2 }
-alert("This is Simplified" + sumTo(n));
+function sumTo(n) { return n * (n + 1) / 2 }
+alert("This is Simplified: " + sumTo(n));
 
 // #endregion
