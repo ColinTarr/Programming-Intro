@@ -10,11 +10,29 @@
 
 <body>
 
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item" id="title">
+            <h1 id="Title1">Recursion Battle</h1>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item" id="textBox">
+            <h2 id="ingameText"></h2>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item" id="buttonGrid">
+            <button id="gameBtn" onclick="battleStart()">Fight</button>
+            <button id="continueGameBtn" style="visibility:hidden" onclick="rollDice();continueBattle()">Continue</button>
+        </div>
+        <div class="grid-item"></div>
+    </div>
 
 
 
-
-    <script src="script.js"></script>
+    <script src="textAtt.js"></script>
+    <script src="script.js" async defer></script>
 </body>
 
 </html>
