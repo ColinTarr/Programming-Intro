@@ -4,32 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fallen Sector</title>
+    <title>The Fallen Sector</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-        /*
-    font-family: 'Press Start 2P', cursive;
-    */
-        
-        #titleText {
-            font-family: 'Press Start 2P', cursive;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="title">
-        <h1 id="titleText">Fallen Sector</h1>
-    </div>
-    <div class="game">
-        <p id="intro"></p>
-        <div id="nameInputDiv">
-            <input type="text" id="name">
-            <button type="submit" id="submitBtn" onclick="myFunction()">Enter</button>
+
+    <div class="grid-container">
+        <div class="grid-item-1">
+            <img id="axeImage" src="Images/GARBAGEaxe.png" alt="axe">
         </div>
+        <div class="grid-item-2" id="title">
+            <h1 id="Title1">The Fallen Sector</h1>
+        </div>
+        <div class="grid-item-3"></div>
+        <div id="sword" class="grid-item-4"></div>
+        <div class="grid-item-5" id="textBox">
+            <h2 id="ingameText"></h2>
+            <div id="inputBox">
+                <br>
+                <br>
+                <input id='nameBox' type='text'>
+                <button id='nameBtn'>Submit</button>
+            </div>
+        </div>
+        <div id="axe" class="grid-item-6">
+            <div id="axeArt">
+                <pre>                           ..</pre>
+                <pre>                           ;:</pre>
+                <pre>                          .::.</pre>
+                <pre>                         . ::`.                      `;.</pre>
+                <pre>                        :  ::  :                      ; :.</pre>
+                <pre>                       :   ::   :                    .;  :.</pre>
+                <pre>                      :    ::    :                   ::   :.</pre>
+                <pre>                     :     ::     :                .::    ::</pre>
+                <pre>                     :     ::     :               .::      ::</pre>
+                <pre>                     `.    ::    .               .::       ::</pre>
+                <pre>                      `.   ::   .               .::         ::</pre>
+                <pre>                        `. :: .               .::           ::</pre>
+                <pre>                         :    :            .:::             :;</pre>
+                <pre>                  _--.   :....:       ...::::               :::</pre>
+                <pre>           _____-`    `-.:....:.---:::::::                  ::;</pre>
+                <pre>    ___----           ..............                        ::;</pre>
+                <pre>--==___===============..............                        ::;</pre>
+                <pre>       ----___          .........:::::..                    ::;</pre>
+                <pre>              ``-_    .  :\\//: ```:::::::..                :;</pre>
+                <pre>                  `--    ://\\:        ``:::::.             :;</pre>
+                <pre>                         :\\//:            ``:::.           :;</pre>
+                <pre>                         ://\\:               `::.         :;</pre>
+                <pre>                         :\\//:                :::.        :;</pre>
+                <pre>                         ://\\:                :::;       :;</pre>
+                <pre>                         :\\//:                ::::      :;</pre>
+                <pre>                         ://\\:                :::      :;</pre>
+                <pre>                         :\\//:                :::      :</pre>
+                <pre>                         ://\\:               :::      :</pre>
+                <pre>                         :\\//:               :::     :</pre>
+                <pre>                         ://\\:               ;;     :</pre>
+                <pre>                         :\\//:               ;     :</pre>
+                <pre>                         ://\\:              ;     :</pre>
+                <pre>                         [____]              ;    :</pre>
+                <pre>                         [____]             ;    :</pre>
+                <pre>                         [____]            .    :</pre>
+                <pre>                         [____]           .    :</pre>
+                <pre>                         [____]          .   .:`</pre>
+                <pre>                         [____]         .    :</pre>
+                <pre>                         :\\//:         :    :</pre>
+                <pre>                         ://\\:         `.   `.</pre>
+                <pre>                         :\\//:          `.   `.</pre>
+                <pre>                         ://\\:            `.   ;</pre>
+                <pre>                         [____]              `..</pre>
+                <pre>                         [____]</pre>
+                <pre>                         [____]</pre>
+                <pre>                         [____]</pre>
+                <pre>                         [____]</pre>
+                <pre>                         :....:</pre>
+                <pre>                       .-  :: `-.</pre>
+                <pre>                     .     ::  ..`.</pre>
+                <pre>                    /      ::  `   \</pre>
+                <pre>                   :       ::       ;</pre>
+                <pre>                   ::::::::::::::::::</pre>
+                <pre>                   :       ::       ;</pre>
+                <pre>                    \      ::      /</pre>
+                <pre>                     `.    ::    .</pre>
+                <pre>                       `-..::..-</pre>
+            </div>
+        </div>
+        <div class="grid-item-7"></div>
+        <div class="grid-item-8" id="buttonGrid">
+            <button id="gameBtn" onclick="battleStart()">Fight</button>
+            <button id="continueGameBtn" style="visibility:hidden" onclick="rollDice();continueBattle()">Continue</button>
+        </div>
+        <div class="grid-item-9"></div>
     </div>
-    <script src="script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="textAtt.js"></script>
+    <script src="script.js" async defer></script>
 </body>
 
 </html>
